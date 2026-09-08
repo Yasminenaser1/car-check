@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Car Check — find a car that fits your life</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Which car fits your life?</h1>
+    <p class="sub">Ranked from NHTSA safety ratings, recalls, complaints and open investigations.</p>
+  </header>
+
+  <section class="card" id="questions">
+    <div class="field">
+      <label for="kids">How many kids?</label>
+      <select id="kids">
+        <option value="0">None</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4 or more</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="priority">What matters most?</label>
+      <select id="priority">
+        <option value="balanced" selected>A bit of both</option>
+        <option value="reliability">Reliability — I don't want it in the shop</option>
+        <option value="safety">Safety — crash protection first</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="minYear">Oldest year you'd consider</label>
+      <select id="minYear">
+        <option value="">Any year</option>
+        <option value="2017">2017 or newer</option>
+        <option value="2018">2018 or newer</option>
+        <option value="2019">2019 or newer</option>
+      </select>
+    </div>
+
+    <button id="findBtn">Find my car</button>
+  </section>
+
+  <section id="notes"></section>
+  <section id="results"></section>
+
+  <footer id="meta"></footer>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
